@@ -8,7 +8,7 @@ class BooksController < ApplicationController
     if book.save
      redirect_to book_path(book.id)
     else
-     render :new
+     redirect_to books_path
     end
   end
 
