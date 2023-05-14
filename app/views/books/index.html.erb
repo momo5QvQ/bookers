@@ -15,7 +15,7 @@
     <td>
      <a><%= link_to "Show" , book_path(book.id) %></a>
      <a><%= link_to "Edit" , edit_book_path(book.id) %></a>
-     <a><%= link_to "Destroy" , destroy_book_path(book.id), method: :delete, "date-confirm" => "本当に削除しますか？" %></a>
+     <a><%= link_to "Destroy" , book_path(book.id), method: :delete, "date-confirm" => "本当に削除しますか？" %></a>
     </td>
    </tr>
   <% end %> 
